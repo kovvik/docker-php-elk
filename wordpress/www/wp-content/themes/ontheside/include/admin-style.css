@@ -1,0 +1,86 @@
+.options-container {
+padding: 15px;
+display:block;
+margin-top:2em;
+position: relative;
+border:3px solid #ccc;
+width: 640px;
+}
+.options-table-1 {
+border: 1px solid #ccc;
+padding: 15px;
+width: 440px;
+background: #fafafa;
+}
+#icon-themes p {
+display: inline;
+width: 340px;
+text-align: right;
+border-bottom: thin dotted #ccc;
+}
+#icon-themes img {
+position: relative;
+top: 0;
+left: 0;
+height: 36px;
+width: 36px;
+margin-right: 2em;
+}
+fieldset {
+padding: 9px;
+border: 3px solid #999;
+border-radius:5px;
+background: #fafafa
+}
+td h3, td h4, td h5 {
+padding: 0 7px;
+}
+.select-data-row {
+position: relative;
+background:#ececec;
+padding:3px;
+border:3px solid #ccc;
+border-radius:3px
+}
+.select-options-box {
+position: relative;
+height: 2.3333em;
+width: 300px;
+background:#ececec;
+padding:3px;
+border:3px solid #ccc;
+border-radius:3px
+}
+.select-options-dropdown {
+position: relative;;
+margin-right: 10%;
+width: 52px;
+float: right;
+border: thin solid #5bc;
+}
+.selected-data-row {
+width:380px;
+background:#fffffc;
+padding:6px;
+border:3px solid #ccc;
+border-radius:3px
+}
+.selected-data-row span {
+color:royalblue;
+font-weight: 800;
+font-size:1.128em
+}
+.options-instruct-table {
+width: 675px;
+padding: 0;
+margin-top: 1.655em;
+}
+.options-instruct {
+text-align: left;
+border:3px solid #ccc;
+padding:13px;
+background:#e6e6e6;
+border-radius:3px
+}
+.clearme{clear: both; margin:0; padding:0;}
+

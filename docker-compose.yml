@@ -30,27 +30,22 @@ mysql:
     - "3306:3306"
   environment:
     - MYSQL_ROOT_PASSWORD=1q9o2w8i37eu
-    - MYSQL_DATABASE=wordpress
-    - MYSQL_USER=wordpress
+    - MYSQL_DATABASE=database
+    - MYSQL_USER=dbuser
     - MYSQL_PASSWORD=1q9o2w8i37eu
   volumes:
     - ./mysql/etc:/etc/mysql/conf.d/
     - ./mysql/init.d:/docker-entrypoint-initdb.d/
   volumes_from:
     - logstashdata
-wordpress:
-  image: wordpress:4.3.1-apache
+php:
+  build: php
   volumes:
-    - ./wordpress/www:/var/www/html
-    - ./wordpress/etc:/etc/apache2/conf-enabled/
+    - ./php/www:/var/www/html
+    - ./php/etc:/etc/apache2/conf-enabled/
   volumes_from:
     - logstashdata
   links:
     - mysql
   ports:
     - "80:80"
-  environment:
-    - WORDPRESS_DB_HOST=mysql
-    - WORDPRESS_DB_USER=wordpress
-    - WORDPRESS_DB_PASSWORD=1q9o2w8i37eu
-    - WORDPRESS_DB_NAME=wordpress

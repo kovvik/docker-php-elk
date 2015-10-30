@@ -1,5 +1,5 @@
 logstash:
-  image: logstash
+  image: logstash:1.5
   ports:
     - "5000:5000"
   volumes:
@@ -10,12 +10,12 @@ logstash:
   links:
     - elasticsearch
 elasticsearch:
-  image: elasticsearch
+  image: elasticsearch:1.7
   ports:
     - "9200:9200"
     - "9300:9300"
 kibana:
-  image: kibana
+  image: kibana:4.1
   ports:
     - "5601:5601"
   links:

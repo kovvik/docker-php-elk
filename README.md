@@ -1,10 +1,10 @@
 # docker-php-elk
 
-This project is for testing/QA a PHP/MySQL application. It is created from several docker containers to monitor, log and measure things (ELK stack).
+This project is for testing a PHP/MySQL application. It is created from several docker containers to monitor, log and measure things (ELK stack). You can view and measure the performance of your PHP application.
 
 ## Usage
 
-Put your PHP project files in the php/www folder. If you have an initial database put your dump file into mysql/init.d/dump.sql
+Put your PHP project files in the php/www folder. If you have an initial database put your dump file into mysql/init.d/dump.sql. The MySQL user/database settings are in the docker-compose.yml file.
 
 Use `docker-compose up` to start the containers. The containers are available at these TCP ports:
 
@@ -12,3 +12,5 @@ Use `docker-compose up` to start the containers. The containers are available at
 * MySQL: 3306
 * Kibana: 5601
 * elasticsearch: 9200, 9300
+
+The Logstash receives http access log from apache and the query log from MySQL (yes, I did it!:D).

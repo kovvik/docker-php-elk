@@ -1,6 +1,6 @@
 # docker-php-elk
 
-This project is for testing/QA a PHP/MySQL application. It is created from several docker containers to monitor, log and measure things (ELK stack).
+This project is for testing a PHP/MySQL application. It is created from several docker containers to monitor, log and measure things (ELK stack). You can view and measure the performance of your PHP application.
 
 ## Usage
 
